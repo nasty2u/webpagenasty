@@ -10,12 +10,12 @@ body {
   color: #333;
   line-height: 1.6;
   margin:0;
+  overflow-x: hidden;
 }
 
 #navbar {
   position: fixed;
   top: 0;
-  height:60px;
   width: 100%;
   background-color: #6d0e0e;
   padding: 1em;
@@ -157,13 +157,6 @@ footer {
   align-items: center;     /* центр по горизонтали */
 }
 
-footer {
-  height: 20vh;
-  background: #303841;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
 
 footer hr {
   width: 100%;
@@ -189,9 +182,13 @@ footer p {
     align-items: center;    /* центрируем по горизонтали */
     gap: 1em;               /* уменьшаем отступы */
   }
-}
-
   .project-grid {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 600px) {
+  footer p {
+    padding: 0 1em;
+  }
+}
+
