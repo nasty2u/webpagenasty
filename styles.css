@@ -163,6 +163,10 @@ footer hr {
   border: 1px solid #6d0e0e;
   margin: 0;
 }
+footer a{
+  text-decoration:none;
+  color:white;
+}
 
 .footer-text {
   display: flex;            
@@ -191,4 +195,5 @@ footer p {
     padding: 0 1em;
   }
 }
+
 
